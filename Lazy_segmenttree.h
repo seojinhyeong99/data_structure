@@ -5,7 +5,7 @@ class Lazy_Seg{
     vector<int>st,prop;
     void init(int n,int s,int e,vector<int>&v){
         if(s==e){
-            st[s]=v[s];
+            st[n]=v[s];
             return;
         }
         int m=s+e>>1;
