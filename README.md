@@ -4,5 +4,6 @@
 - Seg Beats tree
 - Bipartite matching
 - Dinic
+- MCMF(Edmonds-Karp Algorithm)
 - f.condinate compression
 - f.matrix power psum
