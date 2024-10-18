@@ -5,5 +5,6 @@
 - Bipartite matching
 - Dinic
 - MCMF(Edmonds-Karp Algorithm)
+- SCC(Tarjan)
 - f.condinate compression
 - f.matrix power psum
