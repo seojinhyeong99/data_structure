@@ -6,5 +6,6 @@
 - Dinic
 - MCMF(Edmonds-Karp Algorithm)
 - SCC(Tarjan)
+- Heavy Light Decomposition 
 - f.condinate compression
 - f.matrix power psum
