@@ -39,6 +39,7 @@ class HLD{
         }
     }
     void dfs2(int x){
+        //ett
         in[x]=++cnt;
         for(const auto &i:g[x]){
             top[i]=(i==g[x][0]?top[x]:i);
@@ -47,6 +48,7 @@ class HLD{
     }
     //idx,depth
     pair<int,int> find_LCA(int a,int b){
+        //Small to Lage
         while(top[a]!=top[b]){
             if(dep[top[a]]<dep[top[b]]) swap(a,b);
             a=par[top[a]];
@@ -56,9 +58,11 @@ class HLD{
         return {b,dep[b]};
     }
     public:
+    //exist tree case
     HLD(int n):N(n),seg(Lazy_Seg(n)){}
     HLD(int n,vector<vector<int>>&g2):N(n),seg(Lazy_Seg(n)){
         init();
+        g=vector<vector<int>>(N+1);
         set_tree(1,0,g2);
         dfs1(1);
         dfs2(1);
