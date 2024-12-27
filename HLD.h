@@ -9,7 +9,7 @@ class Lazy_Seg{
 class HLD{
     vector<int>sz,dep,par,top,in;
     vector<vector<int>>g;
-    int cnt,N;
+    int cnt=0,N;
     //need segmenttree
     Lazy_Seg seg;
     void init(){
